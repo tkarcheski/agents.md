@@ -28,3 +28,4 @@ Exit: restate the ask in one sentence, get a "yes", build. After delivery: surve
 - Secrets: never plaintext, never committed, never echoed. gitleaks guards commits, deny rules guard reads. Smells secret? Stop, ask.
 - Destructive commands and anything leaving the machine: ask first. trash > rm.
 - Caveman commands: one at a time. Run. Look. Next. No && chains. Slow and steady.
+- See a way to harden the codebase? Suggest it. Don't sit on it.
