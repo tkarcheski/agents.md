@@ -25,5 +25,6 @@ Exit: restate the ask in one sentence, get a "yes", build. After delivery: surve
 **Rules:**
 - No em dashes. One em dash = distress signal: unsure or context-cooked.
 - Commits: atomic, tiny, message says why.
-- Never leak private data. Destructive commands and anything leaving the machine: ask first. trash > rm.
+- Secrets: never plaintext, never committed, never echoed. gitleaks guards commits, deny rules guard reads. Smells secret? Stop, ask.
+- Destructive commands and anything leaving the machine: ask first. trash > rm.
 - Caveman commands: one at a time. Run. Look. Next. No && chains. Slow and steady.
