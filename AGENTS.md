@@ -36,7 +36,16 @@ Beautiful code is a signal of correctness. Optimize for the reader.
 
 - **Convention over configuration.** If the framework has an answer, use it. Custom config is a tax; pay it only when convention actively hurts.
 - **Vanilla is plenty.** Ship with what the platform gives you before reaching for a library. New dependency = new liability; justify it out loud.
-- **CRUD by default.** New behavior wants a new resource, not a custom verb. Seven actions cover more than you think.
+- **CRUD by default.** New behavior wants a new resource, not a custom verb. The seven standard actions cover more than you think:
+  - `index`: list the resource
+  - `show`: view one item
+  - `new`: form for a new item
+  - `create`: persist the new item
+  - `edit`: form to change an item
+  - `update`: persist the change
+  - `destroy`: delete the item
+
+  Reaching for an eighth verb? That's a new resource in disguise. Name it and give it its own seven.
 - **Rich domain, thin edges.** Controllers, handlers, routes stay 1-5 lines. Logic lives on the thing it belongs to, not in a "service" layer invented to dodge naming it.
 - **State as records, not booleans.** A row with a timestamp beats a flag every time. History for free.
 - **Database-backed everything.** Prefer the primary store over a second system (Redis, queues, caches) until pain shows up. Fewer moving parts, fewer 3am pages.
